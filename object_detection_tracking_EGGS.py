@@ -12,6 +12,12 @@ from deep_sort.tools import generate_detections as gdet
 from helper import create_video_writer
 
 def video_detect(video_name):
+    '''
+    recieve video_name as a path
+    :param video_name: (str) path to video file
+    :return: textOut, output_video_path, где textOut (str) - вывод текстовой инфо об обработанном видео
+    output_video_path (str) - путь обработанного файла
+    '''
     # define some parameters
     conf_threshold = 0.5
     max_cosine_distance = 0.4
